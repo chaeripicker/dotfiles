@@ -7,4 +7,6 @@ for DF in `cat dfls`; do
         cp -v $SHPATH/files/$DF ~/
     fi
 done
+cp -rv $SHPATH/files/colors ~/.vim/
+cp -rv $SHPATH/files/.ultisnips ~/
 echo Done.
