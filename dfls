@@ -1,7 +1,8 @@
 .profile
 .bashrc
 .vimrc
-.tmux/.tmux.conf
+.tmux.conf
 .tmux.conf.local
 .gitconfig
-.ultisnips
+.ultisnips/
+.vim/colors

@@ -1,9 +1,10 @@
-HPATH=$(dirname "$0")
+SHPATH=$(dirname "$0")
+mkdir files 2> /dev/null
 for DF in `cat dfls`; do
-cp -r ~/$DF $SHPATH
-echo Saved $DF
+    if [ -d ~/$DF ]; then
+        cp -rv ~/$DF $SHPATH/files
+    else
+        cp -v ~/$DF $SHPATH/files
+    fi
 done
 echo Done.
-git add $SHPATH
-git commit -a
-                          
