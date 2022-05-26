@@ -77,6 +77,8 @@ map K :OmniSharpSignatureHelp<CR>
 imap <c-k> map K :OmniSharpSignatureHelp<CR>
 " " agenda
 imap [<space> [<space>]<space>
+noremap gx 2<bar>rXddggp<c-o>
+noremap gv 2<bar>rv
 " " Others
 map <cr><cr> o<esc>
 
