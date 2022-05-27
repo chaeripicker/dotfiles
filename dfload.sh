@@ -1,6 +1,6 @@
 git pull
 SHPATH=$(dirname "$0")
-for DF in `cat dfls`; do
+for DF in `cat $SHPATH/dfls`; do
     if [ -d $SHPATH/$DF ]; then
         cp -rv $SHPATH/files/$DF ~/
     else

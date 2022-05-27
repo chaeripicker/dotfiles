@@ -1,6 +1,6 @@
 SHPATH=$(dirname "$0")
 mkdir files 2> /dev/null
-for DF in `cat dfls`; do
+for DF in `cat $SHPATH/dfls`; do
     if [ -d ~/$DF ]; then
         cp -rv ~/$DF $SHPATH/files
     else
