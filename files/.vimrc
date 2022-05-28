@@ -63,7 +63,7 @@ map <space>C :tabnew<cr><c-o>
 map <space>w :w<cr>
 " " Git / fugitive.vim
 map <space>g :G<space>
-map <space>dif :!git diff
+map <space>dif :!git diff<cr>
 " " .vimrc
 map <space>rc :e $MYVIMRC<CR>
 map <space>rr :source $MYVIMRC<CR>
