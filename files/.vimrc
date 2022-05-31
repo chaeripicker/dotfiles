@@ -157,7 +157,7 @@ call asyncomplete#register_source(asyncomplete#sources#ultisnips#get_source_opti
         \ 'allowlist': ['*'],
         \ 'completor': function('asyncomplete#sources#ultisnips#completor'),
         \ }))
-let g:UltiSnipsSnippetDirectories=["UltiSnips", $HOME.'/.ultisnips']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.ultisnips']
 " }}}
 
 " Sharpenup: {{{

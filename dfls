@@ -5,4 +5,4 @@
 .tmux.conf.local
 .gitconfig
 .ultisnips/
-.vim/colors
+.vim/colors/

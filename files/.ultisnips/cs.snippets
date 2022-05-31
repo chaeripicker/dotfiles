@@ -434,17 +434,20 @@ using System;
 using Xunit;
 public class $1 : IDisposable
 {
-    Map? map;
-    Player? player;
+    Map? _map;
+    Player? _player;
+    Map map = _map!;
+    Player player = _player!;
     public $1()
     {    
-        map = new(3, null, false);
-        player = Player._instance = new Player("test");
+        _map = new(3, null, false);
+        _player = Player._instance = new Player("test");
     }
     public void Dispose()
     {
-        map = null;
-        player = Player._instance = null;
+        _map = null;
+        _player = Player._instance = null;
+	Map.ResetMapTurn();
         Program.OnTurn = null;
     }
     [Fact]
